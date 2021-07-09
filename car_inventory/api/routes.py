@@ -31,7 +31,6 @@ def create_car(current_user_token):
 
     response = car_schema.dump(car)
     return jsonify(response)
-    # return "Jon big boy"
 
 @api.route("/car", methods = ["GET"])
 @token_required
